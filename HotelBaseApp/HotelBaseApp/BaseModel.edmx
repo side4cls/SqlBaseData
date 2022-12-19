@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Хранилище HotelClientBaseModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Аренда">
+          <Key>
+            <PropertyRef Name="Код Аренды" />
+          </Key>
+          <Property Name="Код Аренды" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Код Номера" Type="int" Nullable="false" />
+          <Property Name="Код Клиента" Type="int" Nullable="false" />
+          <Property Name="Код Отеля" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Клиенты">
+          <Key>
+            <PropertyRef Name="Код Клиента" />
+          </Key>
+          <Property Name="Код Клиента" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Фамилия Клиента" Type="nvarchar" MaxLength="50" />
+          <Property Name="Имя Клиента" Type="nvarchar" MaxLength="50" />
+          <Property Name="Отчество Клиента" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Номера">
+          <Key>
+            <PropertyRef Name="Код Номера" />
+          </Key>
+          <Property Name="Код Номера" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Название Номера" Type="text" Nullable="false" />
+          <Property Name="Комплектация Номера" Type="text" Nullable="false" />
+          <Property Name="Номер" Type="text" Nullable="false" />
+          <Property Name="Цена Номера" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Отель">
+          <Key>
+            <PropertyRef Name="Код Отеля" />
+          </Key>
+          <Property Name="Код Отеля" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Адрес отеля" Type="text" Nullable="false" />
+          <Property Name="Название отеля" Type="text" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Аренда_Клиенты">
+          <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="1" />
+          <End Role="Аренда" Type="Self.Аренда" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Клиенты">
+              <PropertyRef Name="Код Клиента" />
+            </Principal>
+            <Dependent Role="Аренда">
+              <PropertyRef Name="Код Клиента" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Аренда_Номера">
+          <End Role="Номера" Type="Self.Номера" Multiplicity="1" />
+          <End Role="Аренда" Type="Self.Аренда" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Номера">
+              <PropertyRef Name="Код Номера" />
+            </Principal>
+            <Dependent Role="Аренда">
+              <PropertyRef Name="Код Номера" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Аренда_Отель">
+          <End Role="Отель" Type="Self.Отель" Multiplicity="1" />
+          <End Role="Аренда" Type="Self.Аренда" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Отель">
+              <PropertyRef Name="Код Отеля" />
+            </Principal>
+            <Dependent Role="Аренда">
+              <PropertyRef Name="Код Отеля" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище HotelClientBaseModelContainer">
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Аренда" EntityType="Self.Аренда" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Клиенты" EntityType="Self.Клиенты" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Номера" EntityType="Self.Номера" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Отель" EntityType="Self.Отель" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Аренда_Клиенты" Association="Self.FK_Аренда_Клиенты">
+            <End Role="Клиенты" EntitySet="Клиенты" />
+            <End Role="Аренда" EntitySet="Аренда" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Аренда_Номера" Association="Self.FK_Аренда_Номера">
+            <End Role="Номера" EntitySet="Номера" />
+            <End Role="Аренда" EntitySet="Аренда" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Аренда_Отель" Association="Self.FK_Аренда_Отель">
+            <End Role="Отель" EntitySet="Отель" />
+            <End Role="Аренда" EntitySet="Аренда" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HotelClientBaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="principal_id" Nullable="false" Type="Int32" />
+          <Property Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" MaxLength="Max" FixedLength="false" Type="Binary" />
+        </EntityType>
+        <EntityType Name="Аренда">
+          <Key>
+            <PropertyRef Name="Код_Аренды" />
+          </Key>
+          <Property Name="Код_Аренды" Type="Int32" Nullable="false" />
+          <Property Name="Код_Номера" Type="Int32" Nullable="false" />
+          <Property Name="Код_Клиента" Type="Int32" Nullable="false" />
+          <Property Name="Код_Отеля" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Клиенты" Relationship="Self.FK_Аренда_Клиенты" FromRole="Аренда" ToRole="Клиенты" />
+          <NavigationProperty Name="Номера" Relationship="Self.FK_Аренда_Номера" FromRole="Аренда" ToRole="Номера" />
+          <NavigationProperty Name="Отель" Relationship="Self.FK_Аренда_Отель" FromRole="Аренда" ToRole="Отель" />
+        </EntityType>
+        <EntityType Name="Клиенты">
+          <Key>
+            <PropertyRef Name="Код_Клиента" />
+          </Key>
+          <Property Name="Код_Клиента" Type="Int32" Nullable="false" />
+          <Property Name="Фамилия_Клиента" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Имя_Клиента" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Отчество_Клиента" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Аренда" Relationship="Self.FK_Аренда_Клиенты" FromRole="Клиенты" ToRole="Аренда" />
+        </EntityType>
+        <EntityType Name="Номера">
+          <Key>
+            <PropertyRef Name="Код_Номера" />
+          </Key>
+          <Property Name="Код_Номера" Type="Int32" Nullable="false" />
+          <Property Name="Название_Номера" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Комплектация_Номера" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Номер" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Цена_Номера" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <NavigationProperty Name="Аренда" Relationship="Self.FK_Аренда_Номера" FromRole="Номера" ToRole="Аренда" />
+        </EntityType>
+        <EntityType Name="Отель">
+          <Key>
+            <PropertyRef Name="Код_Отеля" />
+          </Key>
+          <Property Name="Код_Отеля" Type="Int32" Nullable="false" />
+          <Property Name="Адрес_отеля" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Название_отеля" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Аренда" Relationship="Self.FK_Аренда_Отель" FromRole="Отель" ToRole="Аренда" />
+        </EntityType>
+        <Association Name="FK_Аренда_Клиенты">
+          <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="1" />
+          <End Role="Аренда" Type="Self.Аренда" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Клиенты">
+              <PropertyRef Name="Код_Клиента" />
+            </Principal>
+            <Dependent Role="Аренда">
+              <PropertyRef Name="Код_Клиента" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Аренда_Номера">
+          <End Role="Номера" Type="Self.Номера" Multiplicity="1" />
+          <End Role="Аренда" Type="Self.Аренда" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Номера">
+              <PropertyRef Name="Код_Номера" />
+            </Principal>
+            <Dependent Role="Аренда">
+              <PropertyRef Name="Код_Номера" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Аренда_Отель">
+          <End Role="Отель" Type="Self.Отель" Multiplicity="1" />
+          <End Role="Аренда" Type="Self.Аренда" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Отель">
+              <PropertyRef Name="Код_Отеля" />
+            </Principal>
+            <Dependent Role="Аренда">
+              <PropertyRef Name="Код_Отеля" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HotelClientBaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="Аренда" EntityType="Self.Аренда" />
+          <EntitySet Name="Клиенты" EntityType="Self.Клиенты" />
+          <EntitySet Name="Номера" EntityType="Self.Номера" />
+          <EntitySet Name="Отель" EntityType="Self.Отель" />
+          <AssociationSet Name="FK_Аренда_Клиенты" Association="Self.FK_Аренда_Клиенты">
+            <End Role="Клиенты" EntitySet="Клиенты" />
+            <End Role="Аренда" EntitySet="Аренда" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Аренда_Номера" Association="Self.FK_Аренда_Номера">
+            <End Role="Номера" EntitySet="Номера" />
+            <End Role="Аренда" EntitySet="Аренда" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Аренда_Отель" Association="Self.FK_Аренда_Отель">
+            <End Role="Отель" EntitySet="Отель" />
+            <End Role="Аренда" EntitySet="Аренда" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище HotelClientBaseModelContainer" CdmEntityContainer="HotelClientBaseEntities">
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="HotelClientBaseModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Аренда">
+            <EntityTypeMapping TypeName="HotelClientBaseModel.Аренда">
+              <MappingFragment StoreEntitySet="Аренда">
+                <ScalarProperty Name="Код_Аренды" ColumnName="Код Аренды" />
+                <ScalarProperty Name="Код_Номера" ColumnName="Код Номера" />
+                <ScalarProperty Name="Код_Клиента" ColumnName="Код Клиента" />
+                <ScalarProperty Name="Код_Отеля" ColumnName="Код Отеля" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Клиенты">
+            <EntityTypeMapping TypeName="HotelClientBaseModel.Клиенты">
+              <MappingFragment StoreEntitySet="Клиенты">
+                <ScalarProperty Name="Код_Клиента" ColumnName="Код Клиента" />
+                <ScalarProperty Name="Фамилия_Клиента" ColumnName="Фамилия Клиента" />
+                <ScalarProperty Name="Имя_Клиента" ColumnName="Имя Клиента" />
+                <ScalarProperty Name="Отчество_Клиента" ColumnName="Отчество Клиента" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Номера">
+            <EntityTypeMapping TypeName="HotelClientBaseModel.Номера">
+              <MappingFragment StoreEntitySet="Номера">
+                <ScalarProperty Name="Код_Номера" ColumnName="Код Номера" />
+                <ScalarProperty Name="Название_Номера" ColumnName="Название Номера" />
+                <ScalarProperty Name="Комплектация_Номера" ColumnName="Комплектация Номера" />
+                <ScalarProperty Name="Номер" ColumnName="Номер" />
+                <ScalarProperty Name="Цена_Номера" ColumnName="Цена Номера" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Отель">
+            <EntityTypeMapping TypeName="HotelClientBaseModel.Отель">
+              <MappingFragment StoreEntitySet="Отель">
+                <ScalarProperty Name="Код_Отеля" ColumnName="Код Отеля" />
+                <ScalarProperty Name="Адрес_отеля" ColumnName="Адрес отеля" />
+                <ScalarProperty Name="Название_отеля" ColumnName="Название отеля" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,136 @@
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\bin\Debug\HotelBaseApp.exe.config
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\bin\Debug\HotelBaseApp.exe
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\bin\Debug\HotelBaseApp.pdb
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.AssemblyReference.cache
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPage.g.cs
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\ClientPage.g.cs
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\MainWindow.g.cs
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\App.g.cs
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp_MarkupCompile.cache
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp_MarkupCompile.lref
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPage.baml
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\ClientPage.baml
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\MainWindow.baml
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.g.resources
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.Properties.Resources.resources
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.GenerateResource.cache
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.CoreCompileInputs.cache
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.exe
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.pdb
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\bin\Debug\EntityFramework.dll
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\bin\Debug\EntityFramework.xml
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp_Content.g.cs
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\App.baml
+C:\Users\utkin\source\repos\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.CopyComplete
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\bin\Debug\HotelBaseApp.exe.config
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\bin\Debug\HotelBaseApp.exe
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\bin\Debug\HotelBaseApp.pdb
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\bin\Debug\EntityFramework.dll
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\bin\Debug\EntityFramework.xml
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.AssemblyReference.cache
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPage.g.cs
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\ClientPage.g.cs
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\MainWindow.g.cs
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\App.g.cs
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp_Content.g.cs
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp_MarkupCompile.cache
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp_MarkupCompile.lref
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\App.baml
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPage.baml
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\ClientPage.baml
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\MainWindow.baml
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.g.resources
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.Properties.Resources.resources
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.GenerateResource.cache
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.CoreCompileInputs.cache
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.CopyComplete
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.exe
+C:\Users\utkin\OneDrive\Рабочий стол\МДК\SQLBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.pdb
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\bin\Debug\HotelBaseApp.exe.config
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\bin\Debug\HotelBaseApp.exe
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\bin\Debug\HotelBaseApp.pdb
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\bin\Debug\EntityFramework.dll
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\bin\Debug\EntityFramework.SqlServer.dll
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\bin\Debug\EntityFramework.xml
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\bin\Debug\EntityFramework.SqlServer.xml
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\bin\Debug\ru\EntityFramework.resources.dll
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.AssemblyReference.cache
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.SuggestedBindingRedirects.cache
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPage.g.cs
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\ClientPage.g.cs
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\MainWindow.g.cs
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\App.g.cs
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp_Content.g.cs
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp_MarkupCompile.cache
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp_MarkupCompile.lref
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\App.baml
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPage.baml
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\ClientPage.baml
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\MainWindow.baml
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.g.resources
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.Properties.Resources.resources
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.GenerateResource.cache
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.CoreCompileInputs.cache
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.CopyComplete
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.exe
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.pdb
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPageHotel.g.cs
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\HotelPage.g.cs
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPageHotel.baml
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\HotelPage.baml
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPageNumber.g.cs
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\NumberPage.g.cs
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPageNumber.baml
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\NumberPage.baml
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPageRent.g.cs
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\RentPage.g.cs
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPageRent.baml
+D:\МДК\sqlBase\sql\HotelBaseApp\HotelBaseApp\obj\Debug\RentPage.baml
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\bin\Debug\HotelBaseApp.exe.config
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\bin\Debug\HotelBaseApp.exe
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\bin\Debug\HotelBaseApp.pdb
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\bin\Debug\EntityFramework.dll
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\bin\Debug\EntityFramework.xml
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.AssemblyReference.cache
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPage.g.cs
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPageHotel.g.cs
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPageNumber.g.cs
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPageRent.g.cs
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\ClientPage.g.cs
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelPage.g.cs
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\MainWindow.g.cs
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\NumberPage.g.cs
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\RentPage.g.cs
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\App.g.cs
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp_Content.g.cs
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp_MarkupCompile.cache
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp_MarkupCompile.lref
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\App.baml
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPage.baml
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPageHotel.baml
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPageNumber.baml
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\AddEditPageRent.baml
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\ClientPage.baml
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelPage.baml
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\MainWindow.baml
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\NumberPage.baml
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\RentPage.baml
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.g.resources
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.Properties.Resources.resources
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.GenerateResource.cache
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.CoreCompileInputs.cache
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.csproj.CopyComplete
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.exe
+C:\Users\utkin\source\repos\BaseDataSql\sqlBase\HotelBaseApp\HotelBaseApp\obj\Debug\HotelBaseApp.pdb

@@ -1,0 +1,52 @@
+﻿<Window x:Class="HotelBaseApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelBaseApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="107*"/>
+            <ColumnDefinition Width="693*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Image Source="/Resources/logo.png" HorizontalAlignment="Left"></Image>
+        <TextBlock Text="HotelClient" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" Margin="219,0,0,0"></TextBlock>
+        <Grid Background="#76e383" Panel.ZIndex="-2" Grid.ColumnSpan="2"></Grid>
+        <Grid Grid.Row="3" Background="#76e383" Margin="0,111,0,0" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+        </Grid>
+        <Frame NavigationUIVisibility="Hidden" ContentRendered="Main_ContentRendered" Grid.Row="1" Name="Main" Navigated="Main_Navigated" Grid.RowSpan="4" Grid.ColumnSpan="2"/>
+        <Button Content="Back" Name="btnBack" HorizontalAlignment="Right" VerticalAlignment="Top" Click="BtnClick" Margin="0,5,5,0" Grid.Column="1"></Button>
+
+        <Button Content="Clients" HorizontalAlignment="Left" Name="BtnClient" Click="BtnClientСlick" Margin="5,11,0,70" Grid.Row="1" Width="53"/>
+        <Button Content="Hotel" HorizontalAlignment="Left" Name="btnHotel" Click="btnHotelClick" Margin="5,45,0,36" Grid.Row="1" Width="53"/>
+        <Button Content="Numbers" Grid.Row="1" HorizontalAlignment="Left" Name="btnNum" Click="btnNumBtnClick" Margin="5,78,0,0" Width="53"/>
+        <Button Content="Rent"  HorizontalAlignment="Left" Name="btnRent" Click="btnRentBtnClick" Margin="5,10,0,72" Width="53" RenderTransformOrigin="0.5,0.5" Grid.Row="2">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+    </Grid>
+</Window>
