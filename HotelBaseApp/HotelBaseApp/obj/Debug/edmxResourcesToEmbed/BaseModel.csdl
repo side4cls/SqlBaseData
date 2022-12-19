@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HotelClientBaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" Type="String" />
+    <Property Name="principal_id" Nullable="false" Type="Int32" />
+    <Property Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" MaxLength="Max" FixedLength="false" Type="Binary" />
+  </EntityType>
+  <EntityType Name="Аренда">
+    <Key>
+      <PropertyRef Name="Код_Аренды" />
+    </Key>
+    <Property Name="Код_Аренды" Type="Int32" Nullable="false" />
+    <Property Name="Код_Номера" Type="Int32" Nullable="false" />
+    <Property Name="Код_Клиента" Type="Int32" Nullable="false" />
+    <Property Name="Код_Отеля" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Клиенты" Relationship="Self.FK_Аренда_Клиенты" FromRole="Аренда" ToRole="Клиенты" />
+    <NavigationProperty Name="Номера" Relationship="Self.FK_Аренда_Номера" FromRole="Аренда" ToRole="Номера" />
+    <NavigationProperty Name="Отель" Relationship="Self.FK_Аренда_Отель" FromRole="Аренда" ToRole="Отель" />
+  </EntityType>
+  <EntityType Name="Клиенты">
+    <Key>
+      <PropertyRef Name="Код_Клиента" />
+    </Key>
+    <Property Name="Код_Клиента" Type="Int32" Nullable="false" />
+    <Property Name="Фамилия_Клиента" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Имя_Клиента" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Отчество_Клиента" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Аренда" Relationship="Self.FK_Аренда_Клиенты" FromRole="Клиенты" ToRole="Аренда" />
+  </EntityType>
+  <EntityType Name="Номера">
+    <Key>
+      <PropertyRef Name="Код_Номера" />
+    </Key>
+    <Property Name="Код_Номера" Type="Int32" Nullable="false" />
+    <Property Name="Название_Номера" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Комплектация_Номера" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Номер" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Цена_Номера" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="Аренда" Relationship="Self.FK_Аренда_Номера" FromRole="Номера" ToRole="Аренда" />
+  </EntityType>
+  <EntityType Name="Отель">
+    <Key>
+      <PropertyRef Name="Код_Отеля" />
+    </Key>
+    <Property Name="Код_Отеля" Type="Int32" Nullable="false" />
+    <Property Name="Адрес_отеля" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Название_отеля" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Аренда" Relationship="Self.FK_Аренда_Отель" FromRole="Отель" ToRole="Аренда" />
+  </EntityType>
+  <Association Name="FK_Аренда_Клиенты">
+    <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="1" />
+    <End Role="Аренда" Type="Self.Аренда" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Клиенты">
+        <PropertyRef Name="Код_Клиента" />
+      </Principal>
+      <Dependent Role="Аренда">
+        <PropertyRef Name="Код_Клиента" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Аренда_Номера">
+    <End Role="Номера" Type="Self.Номера" Multiplicity="1" />
+    <End Role="Аренда" Type="Self.Аренда" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Номера">
+        <PropertyRef Name="Код_Номера" />
+      </Principal>
+      <Dependent Role="Аренда">
+        <PropertyRef Name="Код_Номера" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Аренда_Отель">
+    <End Role="Отель" Type="Self.Отель" Multiplicity="1" />
+    <End Role="Аренда" Type="Self.Аренда" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Отель">
+        <PropertyRef Name="Код_Отеля" />
+      </Principal>
+      <Dependent Role="Аренда">
+        <PropertyRef Name="Код_Отеля" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HotelClientBaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Аренда" EntityType="Self.Аренда" />
+    <EntitySet Name="Клиенты" EntityType="Self.Клиенты" />
+    <EntitySet Name="Номера" EntityType="Self.Номера" />
+    <EntitySet Name="Отель" EntityType="Self.Отель" />
+    <AssociationSet Name="FK_Аренда_Клиенты" Association="Self.FK_Аренда_Клиенты">
+      <End Role="Клиенты" EntitySet="Клиенты" />
+      <End Role="Аренда" EntitySet="Аренда" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Аренда_Номера" Association="Self.FK_Аренда_Номера">
+      <End Role="Номера" EntitySet="Номера" />
+      <End Role="Аренда" EntitySet="Аренда" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Аренда_Отель" Association="Self.FK_Аренда_Отель">
+      <End Role="Отель" EntitySet="Отель" />
+      <End Role="Аренда" EntitySet="Аренда" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
